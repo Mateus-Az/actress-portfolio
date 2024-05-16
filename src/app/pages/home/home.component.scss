@@ -528,9 +528,11 @@
       position: absolute;
       width: calc(100% + 8px);
       height: 100%;
-      border-left: 3px solid $primary-bg-color;
+      border-left: 2px solid $main-color;
       right: -8px;
-      animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+      animation: typing 20s steps(14) infinite;
+      //      animation: cursor .8s infinite, typing 20s steps(14) infinite;
+
     }
   }
 }
@@ -555,10 +557,38 @@
       position: absolute;
       width: calc(100% + 8px);
       height: 100%;
-      border-left: 3px solid $primary-bg-color;
+      border-left: 2px solid $main-color;
       right: -8px;
-      animation: typing 20s steps(14) infinite, cursor 0.6s infinite;
+      animation: typing 20s steps(14) infinite;
     }
+  }
+}
+
+@keyframes typing {
+
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
   }
 }
 
@@ -596,33 +626,6 @@
   }
 }
 
-@keyframes typing {
-
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95% {
-    width: 0;
-  }
-
-  5%,
-  20%,
-  25%,
-  40%,
-  45%,
-  60%,
-  65%,
-  80%,
-  85% {
-    width: calc(100% + 8px);
-  }
-}
 
 
 @media(max-width: 1285px) {
