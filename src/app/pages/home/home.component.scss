@@ -544,7 +544,7 @@
     position: relative;
 
     &::before {
-      content: "The best Atriz";
+      content: "Atriz";
       color: $main-color;
       animation: words 20s infinite;
     }
@@ -572,27 +572,27 @@
 
   0%,
   20% {
-    content: "The best Atriz";
+    content: "Atriz";
   }
 
   21%,
   40% {
-    content: "The best Poeta";
+    content: "Poeta";
   }
 
   41%,
   60% {
-    content: "The best Escritora";
+    content: "Escritora";
   }
 
   61%,
   80% {
-    content: "The best Person";
+    content: "Person";
   }
 
   81%,
   100% {
-    content: "The best Actress";
+    content: "Actress";
   }
 }
 
